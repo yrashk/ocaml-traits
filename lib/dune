@@ -1,0 +1,8 @@
+(library
+ (name traits)
+ (public_name traits)
+ (libraries))
+
+(documentation
+ (package traits)
+ (mld_files :standard))

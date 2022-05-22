@@ -1,0 +1,6 @@
+(library
+ (name traits_tests)
+ (inline_tests)
+ (preprocess
+  (pps ppx_inline_alcotest))
+ (libraries traits alcotest ppx_inline_alcotest))
