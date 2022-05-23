@@ -1,6 +1,3 @@
-(** Relative ordering *)
-
-(** Relative ordering definition *)
 type t = Less | Equal | Greater
 
 module PartialEq = Partial_eq.Make (struct

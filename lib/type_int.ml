@@ -1,8 +1,3 @@
-(** Standard traits implementations for [int]
-
-    It includes Stdlib's [Int] to be able to [open Traits] without losing access
-    to [Int] *)
-
 include Int
 
 module PartialEq = Partial_eq.Make (struct

@@ -1,8 +1,3 @@
-(** Standard traits implementations for [option]
-
-    It includes Stdlib's [Option] to be able to [open Traits] without losing
-    access to [Option] *)
-
 include Stdlib.Option
 
 module PartialEq (T : Partial_eq.T) = struct
