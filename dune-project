@@ -10,6 +10,9 @@
 (maintainers
   "Yurii Rashkovskii")
 
+(source (github yrashk/ocaml-traits))
+(version 0.1.0)
+
 (generate_opam_files true)
 
 (package
