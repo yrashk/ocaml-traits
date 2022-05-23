@@ -23,7 +23,16 @@
   (ocaml (>= 4.08.0))
   (alcotest (and :with-test (>= 1.5.0)))
   (ppx_inline_alcotest (and :with-test (>= 1.0.0)))
-  (dune (and :build (>= 3.2.0)))
-  (utop (and :build (>= 2.9.1)))
-  (ocamlformat (and :build (>= 0.21.0)))
+  (dune (>= 2.0))
   (odoc :with-doc)))
+
+(package
+  (name traits-devenv)
+  (synopsis "Development environment for Traits")
+  (description "Development environment for Traits")
+  (depends
+    traits
+    (dune (>= 3.2.0))
+    (utop (>= 2.9.1))
+    (ocamlformat (>= 0.21.0))))
+  
