@@ -10,13 +10,14 @@ homepage: "https://github.com/yrashk/ocaml-traits"
 bug-reports: "https://github.com/yrashk/ocaml-traits/issues"
 depends: [
   "traits"
-  "dune" {>= "3.2.0"}
+  "dune" {>= "3.2" & >= "3.2.0"}
   "dune-release" {>= "1.6.1"}
   "utop" {>= "2.9.1"}
   "ocamlformat" {>= "0.21.0"}
+  "odoc" {with-doc}
 ]
 build: [
-  ["dune" "subst"] {pinned}
+  ["dune" "subst"] {dev}
   [
     "dune"
     "build"

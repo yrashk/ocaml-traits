@@ -1,4 +1,4 @@
-(lang dune 2.0)
+(lang dune 3.2)
 
 (name traits)
 
@@ -21,13 +21,14 @@
  (description "Common traits for generic functionality")
  (depends
   (ocaml (>= 4.08.0))
+  dune
   (alcotest (and :with-test (>= 1.5.0)))
   (ppx_inline_alcotest (and :with-test (>= 1.0.0)))
-  (dune (>= 2.0))
   (odoc :with-doc)))
 
 (package
   (name traits-devenv)
+  (allow_empty)
   (synopsis "Development environment for Traits")
   (description "Development environment for Traits")
   (depends
