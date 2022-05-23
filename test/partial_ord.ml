@@ -24,7 +24,7 @@ let%test "PartialOrd.partial_cmp works with trait implementation'" =
               | _ -> Greater)
         end
       end in
-      let module M = Option.PartialEqSome (Ordering) in
+      let module M = Std.Option.PartialEqSome (Ordering) in
       PartialEq.eq (module M) Equal
       @@ PartialOrd.partial_cmp (module Trait) 1 1
       && PartialEq.eq (module M) Less

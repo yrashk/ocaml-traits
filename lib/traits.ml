@@ -4,6 +4,8 @@ module PartialOrd = Partial_ord
 module Ord = Ord
 module Ordering = Ordering
 
-(* Standard library *)
-module Int = Type_int
-module Option = Type_option
+(* Standard library coverage *)
+module Std = struct
+  module Int = Type_int
+  module Option = Type_option
+end
