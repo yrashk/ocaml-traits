@@ -33,6 +33,7 @@
   (depends
     traits
     (dune (>= 3.2.0))
+    (dune-release (>= 1.6.1))
     (utop (>= 2.9.1))
     (ocamlformat (>= 0.21.0))))
   
